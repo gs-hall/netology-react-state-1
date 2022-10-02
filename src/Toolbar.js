@@ -6,7 +6,8 @@ export default function Toolbar({filters, selected, onSelectFilter}) {
       type="button"
       key={i}
       className={"ghost-button" + (filter === selected ? ' selected' : '')}
-      onClick={() => onSelectFilter(filter)} value={filter}
+      onClick={() => onSelectFilter(filter)}
+      value={filter}
     />
   ));
 }
